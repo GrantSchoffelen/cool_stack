@@ -1,6 +1,8 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-image: url("94823_pap3.png");
+    background-repeat: repeat-y;
 }
 
 a {
@@ -8,7 +10,7 @@ a {
 }
 
 .navbar{
-	background-color: black;
+	background-color: #F3E9EA;
 }
 
 .add_page_form{
@@ -16,7 +18,7 @@ a {
 }
 
 .btn-default{
-	background: green; 
+	background: #A41629;
 }
 
 .page_title{
