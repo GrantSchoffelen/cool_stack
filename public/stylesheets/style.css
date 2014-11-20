@@ -1,0 +1,30 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.navbar{
+	background-color: black;
+}
+
+.add_page_form{
+
+}
+
+.btn-default{
+	background: green; 
+}
+
+.page_title{
+	width: 1175px;
+}
+
+.page_content{
+	height: 200px;
+	width: 1175px;
+}
+

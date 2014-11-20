@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+ 
+{% block content %}
+{% for page in pages %}
+<h1>{{page.title}}</h1>
+    <hr />
+<div>{{page.body|marked}}</div>
+<br>
+<br>
+<br>
+
+<form action="/wiki/{{url_name}}/update" method="post">
+
+
+<input type="submit" value="Update">
+
+<textarea class='page_content' name="body">{{page.body}}</textarea>
+
+</form>
+
+<form action="/wiki/{{url_name}}/delete" method="post">
+
+
+
+<input type="submit" value="Delete?">
+
+</form>
+
+
+    {%endfor%}
+{% endblock %}
+
+
+
+
