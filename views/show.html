@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
- 
+
 {% block content %}
 {% for page in pages %}
 <h1>{{page.title}}</h1>
@@ -12,8 +12,8 @@
 <form action="/wiki/{{url_name}}/update" method="post">
 
 
-<input type="submit" value="Update">
-
+<button type="submit" class="btn btn-lg btn-danger" data-toggle="popover" title="Submit it?">update</button>
+<br>
 <textarea class='page_content' name="body">{{page.body}}</textarea>
 
 </form>
@@ -22,8 +22,7 @@
 
 
 
-<input type="submit" value="Delete?">
-
+<button type="submit" class="btn btn-lg btn-danger" data-toggle="popover" title="Are you sure you want to delete?">Delete?</button>
 </form>
 
 
